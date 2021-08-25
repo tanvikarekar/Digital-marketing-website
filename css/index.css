@@ -1,0 +1,565 @@
+body{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin-bottom: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*********************************************** First Div *****************************************************/
+#first {
+    width: 100%;
+    height: 600px;
+    padding: 10px;  
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+#content{
+    width: 50%; 
+    height: 600px;
+    float: left;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+#inner-content{
+    padding-top: 50px;
+    padding-left: 180px;
+    padding-right: 10px;
+}
+
+.type1{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF3147;
+    font-size: 23px;
+}
+
+.title1{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.description1{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+#button{
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: #FF3147 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 15px 24px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#button:hover{
+    background-color: white;
+    color: #FF3147;
+    border: solid #FF3147 1px;
+    
+}
+
+#img{
+    width: 50%;
+    height: 600px;
+    float: left; 
+    margin-top: 20px;  
+    padding-top: 10px;
+    
+}
+
+.popupBox{
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.contactUs{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    opacity: 1;
+    
+}
+
+form{
+    margin: 16px;
+    padding: 10px 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.formElement{
+    border: none;
+    font-size: 14px;
+    border-bottom: solid grey 1px;
+    padding-bottom:10px;
+    margin-top: 30px;
+    width: 400px;
+    letter-spacing: 1px;
+}
+
+.firstName{
+    width: 180px;
+    float: left;
+    margin-right: 30px;   
+}
+
+.lastName{
+    width: 180px;
+    float: right;   
+}
+
+.condition{
+    display: block;
+    position: relative;
+    padding-bottom:10px;
+    margin-top: 100px;
+    padding-left: 35px;
+    padding-right: 35px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: none;
+    color: rgb(112, 109, 109);
+}
+
+/* Hide the default checkbox */
+input[type = checkbox]{
+    visibility: hidden;
+}
+
+/* Creating a custom checkbox */
+.checkbox{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 14px;
+    width: 14px;
+    border: solid #FF3147 2px;
+    border-radius: 5px;
+    margin-right: 0px;
+}
+
+/* Specify the bg-color to be shown when checkbox is checked */
+.condition input:checked ~ .checkbox{
+    background-color: #FF3147;
+}
+
+.checkbox::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.condition input:checked ~ .checkbox::after{
+    display: block;
+}
+
+.condition .checkbox::after{
+    left: 4px;
+    bottom: 3px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ContactButton{
+    border-bottom: none;
+    background-color: #FF3147;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ContactButton:hover{
+    background-color: white;
+    color: #FF3147;
+    border: solid #FF3147 1px;
+    
+}
+/**************************************************************************************************************/
+
+/*********************************************** Second Div *****************************************************/
+
+#second {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 760px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 180px;
+    
+}
+
+.type2{
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.title2{
+    font-size: 27px;
+    width:20%;
+    float: left;
+    line-height: 35px;
+}
+
+.description2{
+    width: 36%;
+    float: left;
+    padding-left: 80px;
+    padding-right: 100px;
+    margin-top: 38px;
+}
+
+.slider{
+    width:1170px;
+    height:500px;
+    border-radius: 5px;
+    overflow: hidden; 
+    
+}
+
+.slides{
+    width: 500px;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 400px;
+    transition: 1s;
+    position: relative;
+}
+
+.slide img{
+    margin: 10px; 
+}
+
+.info{
+    background: #FF3147;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top:0;
+    left: -1200%;
+}
+
+.inner-info{
+    padding: 20px 10px;
+    margin-top: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+p{
+    margin-bottom: 40px;
+}
+.inner-info .readMore{
+    background-color: white;
+    color: #FF3147;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    text-decoration: none;
+}
+.readMore img{
+    position:absolute;
+    padding-left: 80px;
+    padding-top:0px;
+    margin-top: 5px;
+}
+
+.slide:hover .info{
+    left: 0;
+}
+/********* CSS for manual navigation *********/
+.navigation-manual{
+    position: absolute;
+    width: 1140px;
+    margin-top: 450px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.manual-btn{
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.01s;
+    transition-delay: 0s;
+    background: url("../assets/black-dot(1).svg") center no-repeat padding-box;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background: url("../assets/red-dot.svg") center no-repeat padding-box;
+    
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -80%;
+}
+/**************************************************************************************************************/
+
+/*********************************************** Third Div *****************************************************/
+
+#third {
+    width: 100%;
+    height: 1100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+    padding-left: 180px;
+}
+
+.type3{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-left: 30%;
+}
+
+.title3{
+    font-size: 30px;
+    padding-left: 25%;
+}
+
+.qualities{
+    
+    height: 250px;
+    width: 200px;
+    float: left;
+    margin:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 12px;
+}
+
+.type4{
+    font-size: 18px;
+    margin-top: 350px;
+    margin-bottom: 0px;
+    padding-left: 30%;
+}
+
+.title4{
+    font-size: 30px;
+    padding-left: 25%;
+}
+
+.image{
+    height: 510px;
+    width:600px;
+    float: left;
+    margin-right: 30px;
+    
+}
+
+.text{
+    height: 600px;
+    width: 280px;
+    float: left;
+    margin-top:0;
+}
+
+.text p{
+    font-size: 15px;
+}
+
+.text1{
+    background-color: rgba(199, 191, 191, 0.2);
+    padding: 10px 20px;
+    margin:0px;
+    height: 150px;
+    border: solid white 1px;
+}
+.text1:hover{
+    background-color: #FF3147;
+    color:white;
+    cursor: pointer;
+}
+
+.text2{
+    background-color: rgba(199, 191, 191, 0.2);
+    padding: 10px 20px;
+    margin:0px;
+    height: 150px;
+    border: solid white 1px;
+}
+.text2:hover{
+    background-color: #FF3147;
+    color:white;
+    cursor: pointer;
+}
+
+.text3{
+    background-color: rgba(199, 191, 191, 0.2);
+    padding: 10px 20px;
+    margin:0px;
+    height: 150px;
+    border: solid white 1px;
+}
+.text3:hover{
+    background-color: #FF3147;
+    color:white;
+    cursor: pointer;
+}
+/**************************************************************************************************************/
+
+/*********************************************** Forth Div *****************************************************/
+
+#forth {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 480px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 180px;
+    
+}
+
+.growth{
+    height: 150px;
+    width: 180px;
+    float: left;
+    margin:20px;
+    background: white 0% 0% no-repeat padding-box;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight:normal;
+}
+
+.growth p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.growth:hover{
+    box-shadow: 5px 10px 10px 10px rgba(1,1,1,0.1);
+}
+/**************************************************************************************************************/
+
+/*********************************************** Fifth Div *****************************************************/
+
+#fifth {
+    width: 100%;
+    height: 330px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 180px;
+    
+}
+
+.Quotemarks{
+    padding-left: 240px;
+    padding-right: 200px;
+}
+
+.description3{
+    z-index: -70px;
+    margin-top: -30px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 260px;
+    padding-right: 550px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.red{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FF3147;
+    font-weight: bold;
+    padding-left: 260px;
+    
+}
+
+.grey{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: grey;
+    font-weight: normal;
+}
+/**************************************************************************************************************/
+
+/*********************************************** Sixth Div *****************************************************/
+
+#sixth {
+    background: #FF3147 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 180px;
+}
+
+.footer{
+    padding-top: 50px;
+}
+/**************************************************************************************************************/
+
+
